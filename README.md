@@ -12,7 +12,7 @@ Test project to validate the `Option for Add-in Dependency Isolation` feature in
 The `RevitAddInUtility.dll` now contains the `ManifestSettings` and inside the class `RevitAddInManifest`. With the `UseRevitContext` and `ContextName` to generate the `RevitAddin.addin` file with the isolation settings.
 
 Example:
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <RevitAddIns>
   <AddIn Type="Application">
