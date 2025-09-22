@@ -13,7 +13,7 @@ namespace RevitAddinA.Revit.Commands
         {
             UIApplication uiapp = commandData.Application;
 
-            System.Windows.MessageBox.Show(AssemblyLoadContext.GetLoadContext(typeof(Command).Assembly).ToString());
+            System.Windows.MessageBox.Show(AssemblyLoadContext.GetLoadContext(typeof(Command).Assembly).ToString() + "\n" + AssemblyLoadContext.GetLoadContext(typeof(System.Text.Json.JsonDocument).Assembly).ToString());
 
             return Result.Succeeded;
         }
