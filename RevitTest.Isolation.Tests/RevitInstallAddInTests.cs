@@ -37,8 +37,8 @@ namespace RevitTest.Isolation.Tests
         }
 
         [Explicit]
-        [TestCase("RevitAddinA", "A")]
-        [TestCase("RevitAddinB", "B")]
+        //[TestCase("RevitAddinA", "A")]
+        //[TestCase("RevitAddinB", "B")]
         public void CreateRevitAddinFile(string addinName, string contextName)
         {
             var assemblyPath = Directory.GetFiles(Directory.GetCurrentDirectory(), $"{addinName}*.dll")
